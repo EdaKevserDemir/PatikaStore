@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { TextInput } from 'react-native';
+import Product from './components/PatikaStore/Product';
 
-export default function App() {
+
+function App() {
   return (
     <View style={styles.container}>
-      <Text>PatikaStore App!!</Text>
-      <StatusBar style="auto" />
+      <Product title='Patika Store'></Product>
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    backgroundColor: 'pink'
+  }
+}
+)
+export default App;
+
