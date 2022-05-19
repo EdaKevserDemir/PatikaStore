@@ -1,24 +1,23 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { TextInput } from 'react-native';
 import Product from './components/PatikaStore/Product';
+import React from "react";
+import PatikaStore from './components/PatikaStore';
 
+const UselessTextInput = () => {
+ 
 
-function App() {
   return (
-    <View style={styles.container}>
-      <Product title='Patika Store'></Product>
-
+  <View>
+       <Product>eda</Product>
+     
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
+ 
+});
 
-  container: {
-    flex: 1,
-    backgroundColor: 'pink'
-  }
-}
-)
-export default App;
+export default UselessTextInput;
 
