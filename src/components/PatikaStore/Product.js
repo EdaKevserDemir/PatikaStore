@@ -4,8 +4,7 @@ import styles from './Product.style'
 
 
 const Product =(props)=>
-{ const [text, onChangeText] = React.useState("Useless Text");
-const [number, onChangeNumber] = React.useState(null);
+{ const [text, onChangeText] = React.useState(null);
     return(
         <View style={styles.container}>
             <Text style={styles.title}>{props.title}</Text>
@@ -13,14 +12,10 @@ const [number, onChangeNumber] = React.useState(null);
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
+        placeholder='Search area'
+       
       />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder="useless placeholder"
-        keyboardType="numeric"
-      />
+     
    
         </View>
     );
